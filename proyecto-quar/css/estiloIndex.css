@@ -1,3 +1,4 @@
+
 /* Estilo global */
 body {
     padding-top: 130px;  /* 80px (header) + 50px (nav) */
@@ -17,14 +18,14 @@ a h1 {
     text-decoration: none; /* Quita el subrayado del enlace */
     color: inherit;        /* Hace que el color del enlace sea el mismo que el color del texto alrededor */
     color: white;         /* Asegura que el color del título sea blanco */
-    font-size: 300%;
+    font-size: 200%;
 }
 
 /* Aumentar la especificidad del selector */
 html body header {
     background-color: #051152;
     color: white;
-    padding: 40px 20px;
+    padding: 3% 5%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: fixed;
     top: 0;
@@ -43,30 +44,38 @@ header.scrolled {
 .header-container {
     display: flex;               /* organiza hijos en fila */
     align-items: center;         /* centra verticalmente */
-    justify-content: space-between; /* separa a izquierda y derecha */
+    justify-content: space-between; /* Distribuye h1 a la izquierda e imagen a la derecha */
+    padding: 0 10%;
 }
 
 /* Título */
 .header-container h1 {
     font-family: 'Josefin Sans';
     margin: 0;                   /* elimina margen extra */
-    padding-left: 300px;  /* aumenta el espacio a la derecha */
+    padding-left: 1%;  /* aumenta el espacio a la derecha */
+    
 }
 
 /* Contenedor de las imágenes */
 .header-container-images img {
-    width: 400px;                 /* tamaño de las imágenes */
+    /*width: 40%;                 
     height: auto;
-    margin-left: 10px;           /* espacio entre imágenes si hay varias */
-    padding-right: 300px;  /* aumenta el espacio a la derecha */
+    margin-left: 5%;          
+    padding-right: 5%;  */
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    margin-left: 20px; /* Añade espacio desde la izquierda */
+    
 }
 
 html body nav {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 1%;
     background-color: #6975b3;
-    padding: 15px 20px;
+    padding: 3% 5%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -75,15 +84,31 @@ html body nav {
 nav a {
     color: white;                           /* Color del texto de los enlaces */
     text-decoration: none;                  /* Eliminar subrayado */
-    padding: 10px;                          /* Espaciado de los enlaces */
+    padding: 5%;                          /* Espaciado de los enlaces */
     font-weight: bold;                      /* Negrita en los enlaces */
-    font-size: 200%;
+    font-size: 20%;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;  /* en px para control */
+    font-weight: bold;
+    font-size: 16px;    /* un tamaño legible en móviles */
     font-family: 'Ubuntu';
 
 }
 
 nav a:hover {
     background-color: #4f5b86;              /* Fondo cuando se pasa el mouse sobre el enlace */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    flex-wrap: wrap;  /* permite que se ajusten a varias filas */
+    background-color: #6975b3;
+    padding: 3% 5%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para el contenedor principal */
@@ -93,6 +118,7 @@ nav a:hover {
     padding: 50px;                          /* Espaciado interno */
     background-color: white;               /* Fondo blanco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+    flex: 1; /* Esto hace que crezca y empuje el footer hacia abajo */
 }
 
 
@@ -109,12 +135,6 @@ nav a:hover {
     margin: 0 auto;           /* Centra el contenedor en la página */
     margin-top: 50px;
   }
-
-.img-noticia {
-  display: block;
-  margin: 0 auto;
-}
-
   
 .info-contacto {
     text-align: left;         /* Alinea el texto a la izquierda */
@@ -173,8 +193,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-
-
 .contacto-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -190,11 +208,10 @@ footer {
 }
 
 .contacto-imagen img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     flex: 1 1 300px;
-    max-width: 500px;
 }
 
 .acordeon-noticias .noticia {
@@ -237,17 +254,54 @@ footer {
 .logo-r{
     display: block;
     margin: 0 auto;
+    width: 20%
 }
 
 .espacio-not {
     height: 20px;
 }
 
-.seccion-titulo {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1.3em;
-  
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/*
+@media screen and (max-width: 768px) {
+  .header-container h1 {
+    padding-left: 10%;
+    font-size: 180%;
+    text-align: center;
+  }
+
+  .header-container-images img {
+    padding-right: 10%;
+    width: 200px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav ul {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  padding: 0;
+  margin: 0;
+  background-color: #6c74b9;
+  width: 100%;             
 }
 
+.main-nav li {
+  margin: 10px 0;          
+}
 
+.main-nav a {
+  font-size: 18px;         
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+}*/
