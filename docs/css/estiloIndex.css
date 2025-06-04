@@ -57,12 +57,12 @@ header.scrolled {
 }
 
 /* Contenedor de las imágenes */
-.header-container-images img {
+.footer-container-images img {
     /*width: 40%;                 
     height: auto;
     margin-left: 5%;          
     padding-right: 5%;  */
-    width: 60%;
+    width: 40%;
     height: auto;
     border-radius: 10px;
     flex: 1 1 300px;
@@ -251,7 +251,7 @@ footer {
     display: block;
 }
 
-.logo-r{
+.logo-QUAR{
     display: block;
     margin: 0 auto;
     width: 20%
