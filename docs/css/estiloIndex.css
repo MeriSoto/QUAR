@@ -98,12 +98,12 @@ html body nav {
 nav a {
     color: white;                           /* Color del texto de los enlaces */
     text-decoration: none;                  /* Eliminar subrayado */
-    padding: 20%;                          /* Espaciado de los enlaces */
+    padding: 10%;                          /* Espaciado de los enlaces */
     font-weight: bold;                      /* Negrita en los enlaces */
     font-size: 20%;
     color: white;
     text-decoration: none;
-    padding: 8px 12px;  /* en px para control */
+    padding: 1% 1%;  /* en px para control */
     font-weight: bold;
     font-size: 16px;    /* un tamaño legible en móviles */
     font-family: 'Ubuntu';
@@ -120,13 +120,13 @@ nav {
     gap: 1%;
     flex-wrap: wrap;  /* permite que se ajusten a varias filas */
     background-color: #6975b3;
-    padding: 3% 5%;
+    padding: 1% 1%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     position: relative;  /* Asegura que no quede debajo del header */
     z-index: 10;          /* Asegúrate de que sea visible, pero debajo del header si quieres */
-    margin-top: 80px;     /* Empuja el nav hacia abajo si el header es fixed */
+    margin-top: 15px;     /* Empuja el nav hacia abajo si el header es fixed */
 }
 
 /* Estilo para el contenedor principal */
