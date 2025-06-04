@@ -31,7 +31,7 @@ html body header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 800;
 }
 
 header.scrolled {
@@ -115,19 +115,18 @@ nav a:hover {
 }
 
 nav {
-    position: fixed;              /* Fija el nav debajo del header */
-    top: 80px;                    /* Ajusta según la altura real del header */
-    left: 0;
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 1%;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  /* permite que se ajusten a varias filas */
     background-color: #6975b3;
-    padding: 1% 5%;               /* Ajusta padding si es necesario */
+    padding: 3% 5%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999;                 /* Debajo del header (que tiene 1000) */
+
+    position: relative;  /* Asegura que no quede debajo del header */
+    z-index: 10;          /* Asegúrate de que sea visible, pero debajo del header si quieres */
+    margin-top: 80px;     /* Empuja el nav hacia abajo si el header es fixed */
 }
 
 /* Estilo para el contenedor principal */
