@@ -115,14 +115,19 @@ nav a:hover {
 }
 
 nav {
+    position: fixed;              /* Fija el nav debajo del header */
+    top: 80px;                    /* Ajusta según la altura real del header */
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 1%;
-    flex-wrap: wrap;  /* permite que se ajusten a varias filas */
+    flex-wrap: wrap;
     background-color: #6975b3;
-    padding: 3% 5%;
+    padding: 1% 5%;               /* Ajusta padding si es necesario */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;                 /* Debajo del header (que tiene 1000) */
 }
 
 /* Estilo para el contenedor principal */
