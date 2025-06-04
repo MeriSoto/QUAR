@@ -57,6 +57,20 @@ header.scrolled {
 }
 
 /* Contenedor de las imágenes */
+.header-container-images img {
+    /*width: 40%;                 
+    height: auto;
+    margin-left: 5%;          
+    padding-right: 5%;  */
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    margin-left: 20px; /* Añade espacio desde la izquierda */
+    
+}
+
+/* Contenedor de las imágenes */
 .footer-container-images img {
     /*width: 40%;                 
     height: auto;
