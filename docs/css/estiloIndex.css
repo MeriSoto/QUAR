@@ -98,7 +98,7 @@ html body nav {
 nav a {
     color: white;                           /* Color del texto de los enlaces */
     text-decoration: none;                  /* Eliminar subrayado */
-    padding: 5%;                          /* Espaciado de los enlaces */
+    padding: 20%;                          /* Espaciado de los enlaces */
     font-weight: bold;                      /* Negrita en los enlaces */
     font-size: 20%;
     color: white;
