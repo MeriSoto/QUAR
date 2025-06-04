@@ -25,13 +25,13 @@ a h1 {
 html body header {
     background-color: #051152;
     color: white;
-    padding: 3% 5%;
+    padding: 1% 1%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 800;
+    z-index: 400;
 }
 
 header.scrolled {
@@ -65,7 +65,7 @@ header.scrolled {
     width: 40%;
     height: auto;
     border-radius: 10px;
-    flex: 1 1 300px;
+    flex: 1 1 100px;
     margin-left: 20px; /* Añade espacio desde la izquierda */
     
 }
