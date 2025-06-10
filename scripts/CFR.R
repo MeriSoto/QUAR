@@ -16,13 +16,13 @@ obtener_cfr <- function(nombre_buque) {
   resultado <- system2("python", args = c("buscar_cfr.py", shQuote(nombre_buque)), stdout = TRUE, stderr = TRUE)
 
 # Verifica si hubo un error (el atributo 'status' es clave)
-estado_salida <- attr(resultado_completo, "status")
+estado_salida <- attr(resultado, "status")
 
 # Imprime todo lo que devolvió el proceso para depurar
 print("--- DEBUGGING PYTHON CALL ---")
 print(paste("Nombre del buque pasado a Python:", nombre_buque))
 print("Salida STDOUT (lo que debería ser JSON):")
-print(resultado_completo)
+print(resultado)
 print("Salida STDERR (errores):")
 # Stderr podría estar mezclado con stdout, lo filtramos si es necesario
 # pero por ahora lo mostramos todo.
