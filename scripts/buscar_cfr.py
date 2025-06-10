@@ -20,7 +20,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def buscar_cfr(nombre_buque):
     # Configurar navegador en modo headless (sin interfaz)
     options = webdriver.ChromeOptions()
-    #options.add_argument("--headless=new")  # Usar el nuevo modo headless de Chrome
+    options.add_argument("--headless=new")  # Usar el nuevo modo headless de Chrome
     
     # Inicializar el driver de Chrome con webdriver-manager
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
