@@ -167,7 +167,8 @@ procesar_buques <- function(input_path) {
 #' @param guardar Lógico. Si es TRUE, el archivo se sobrescribe.
 #' @return Una lista con todos los data frames del libro de Excel (modificados).
 #' @warning ¡Esta función sobrescribe el archivo original!
-completar_cfr_y_modificar_excel <- function(ruta_excel, hoja = 1, guardar = TRUE) {
+completar_cfr_y_modificar_excel <- function(hoja = 1, guardar = TRUE) {
+  ruta_excel <- file.choose()
   if (!file.exists(ruta_excel)) {
     stop("❌ Error: El archivo especificado no existe en la ruta: ", ruta_excel)
   }
