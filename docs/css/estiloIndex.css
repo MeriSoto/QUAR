@@ -269,6 +269,12 @@ footer {
     display: block;
 }
 
+.noticia{
+    border-radius: 15px;
+    overflow: hidden; /* Para que contenido interno también respete el borde redondeado */
+    border: 1px solid #ccc; /* Opcional: para que se vea mejor el borde */
+}
+
 .logo-QUAR{
     display: block;
     margin: 0 auto;
